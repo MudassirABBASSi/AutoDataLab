@@ -1,20 +1,20 @@
-# AutoDataLab 📊
+# AutoDataLab 
 
 **Automated Data Analysis and Feature Engineering Laboratory**
 
 A comprehensive Streamlit-based application for end-to-end data science workflows. AutoDataLab provides intuitive interfaces for data loading, profiling, cleaning, visualization, feature engineering, and feature selection.
 
-## Features ✨
+## Features 
 
-- **Data Loading** 📁: Load CSV and Excel files with validation
-- **Data Profiling** 📈: Generate statistical summaries, correlation analysis, missing value detection
-- **Data Cleaning** 🧹: Handle missing values, remove duplicates, detect outliers using IQR
-- **EDA Visualization** 🎨: Create histograms, boxplots, scatterplots, heatmaps, and distribution grids
-- **Feature Engineering** 🔧: One-hot encoding, label encoding, standard scaling, MinMax scaling, date feature extraction
-- **Feature Selection** ✨: Variance thresholding, correlation analysis, SelectKBest, tree-based importance
-- **Complete Pipeline** 📊: Automated end-to-end data processing workflow
+- **Data Loading**       : Load CSV and Excel files with validation
+- **Data Profiling**     : Generate statistical summaries, correlation analysis, missing value detection
+- **Data Cleaning**      : Handle missing values, remove duplicates, detect outliers using IQR
+- **EDA Visualization**  : Create histograms, boxplots, scatterplots, heatmaps, and distribution grids
+- **Feature Engineering**: One-hot encoding, label encoding, standard scaling, MinMax scaling, date feature extraction
+- **Feature Selection**  : Variance thresholding, correlation analysis, SelectKBest, tree-based importance
+- **Complete Pipeline**  : Automated end-to-end data processing workflow
 
-## Architecture 🏗️
+## Architecture 
 
 ```
 AutoDataLab/
@@ -34,7 +34,7 @@ AutoDataLab/
 └── README.md                   # Documentation
 ```
 
-## Installation 🚀
+## Installation 
 
 ### 1. Clone or create the project directory
 ```bash
@@ -57,7 +57,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Usage 🎯
+## Usage 
 
 ### Running the Application
 
@@ -77,7 +77,7 @@ The application will open in your default browser at `http://localhost:8501`
 6. **Select**: Identify the most important features
 7. **Export**: Download processed data
 
-## Core Modules 📚
+## Core Modules 
 
 ### DataLoader
 Load and validate data files (CSV, Excel) with error handling.
@@ -161,7 +161,7 @@ Edit `config/settings.py` to customize:
 - Logging levels
 - Visualization defaults
 
-## Data Processing Pipeline 🔄
+## Data Processing Pipeline 
 
 The complete pipeline performs these steps in sequence:
 
@@ -172,7 +172,7 @@ The complete pipeline performs these steps in sequence:
 5. **Scaling** → Normalize/standardize numerical features
 6. **Selection** → Identify and remove low-value features
 
-## Best Practices 💡
+## Best Practices 
 
 - Always profile your data first to understand its structure
 - Handle missing values before outlier detection
@@ -180,7 +180,7 @@ The complete pipeline performs these steps in sequence:
 - Use feature selection to improve model performance
 - Export processed data for use in other tools
 
-## Troubleshooting 🔧
+## Troubleshooting 
 
 ### App won't start
 ```bash
@@ -199,7 +199,7 @@ pip install -r requirements.txt
 - Increase system memory or use data sampling
 - Process in batches
 
-## Contributing 🤝
+## Contributing 
 
 To add new features or modules:
 
@@ -208,7 +208,7 @@ To add new features or modules:
 3. Add UI in appropriate section of `app.py`
 4. Update documentation
 
-## Dependencies 📦
+## Dependencies 
 
 - **pandas** - Data manipulation
 - **numpy** - Numerical computing
@@ -218,16 +218,17 @@ To add new features or modules:
 - **streamlit** - Web app framework
 - **openpyxl** - Excel file handling
 
-## License 📄
+## License 
 
 This project is provided as-is for educational and commercial use.
 
-## Support 📞
+## Support 
 
 For issues or questions, please check:
 - Module docstrings in `core/` files
 - Configuration options in `config/settings.py`
 - Examples in module `if __name__ == "__main__"` sections
+- **Contact** +9203036409505
 
 ---
 
