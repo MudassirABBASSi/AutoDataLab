@@ -199,7 +199,60 @@ pip install -r requirements.txt
 - Increase system memory or use data sampling
 - Process in batches
 
-## Contributing 
+## Deployment 🚀
+
+### Deploy to Streamlit Community Cloud (Free)
+
+**Streamlit Community Cloud** is the easiest way to deploy your app:
+
+1. **Push to GitHub** (already done ✅)
+   - Your repository: https://github.com/MudassirABBASSi/AutoDataLab
+
+2. **Deploy on Streamlit Cloud**
+   - Go to [share.streamlit.io](https://share.streamlit.io)
+   - Sign in with GitHub
+   - Click "New app"
+   - Select your repository: `MudassirABBASSi/AutoDataLab`
+   - Main file path: `app.py`
+   - Click "Deploy"
+
+3. **Your app will be live at**: `https://[your-app-name].streamlit.app`
+
+### Alternative Deployment Options
+
+#### Docker Deployment
+```dockerfile
+FROM python:3.11-slim
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+COPY . .
+EXPOSE 8501
+CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+```
+
+Build and run:
+```bash
+docker build -t autodatalab .
+docker run -p 8501:8501 autodatalab
+```
+
+#### Heroku Deployment
+```bash
+# Create Procfile
+echo "web: streamlit run app.py --server.port=$PORT --server.address=0.0.0.0" > Procfile
+
+# Deploy
+heroku create your-app-name
+git push heroku main
+```
+
+#### Railway/Render
+- Connect your GitHub repository
+- Set build command: `pip install -r requirements.txt`
+- Set start command: `streamlit run app.py --server.port=$PORT --server.address=0.0.0.0`
+
+## Contributing
 
 To add new features or modules:
 
